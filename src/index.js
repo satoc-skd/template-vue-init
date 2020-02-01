@@ -1,5 +1,3 @@
-// console.log('Hello, World!');
-
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
@@ -16,6 +14,6 @@ import App from './components/App'
 
 new Vue({
     el: '#app',
-    components: { App },
-    template: '<app/>',
+    // vueランタイム限定ビルドを使う場合は以下の記述が必要
+    render: h => h(App),
 })

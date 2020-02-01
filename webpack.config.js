@@ -40,8 +40,8 @@ module.exports = {
         // import './foo.vue' の代わりに import './foo' と書けるようになる(拡張子省略)
         extensions: ['.js', '.vue'],
         alias: {
-          // vue-template-compilerに読ませてコンパイルするために必要
-          vue$: 'vue/dist/vue.esm.js',
+          // ランタイム限定ビルドに切り替える
+          vue$: 'vue/dist/vue.runtime.esm.js',
         },
       },
 

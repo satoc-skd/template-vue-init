@@ -1,16 +1,21 @@
 <script>
 import Counter from './Counter'
 import LimitT from './LimitTime'
+import DispJ from './DispJson'
+
+const srcJson = require('../assets/data.json');
 
 export default {
-    components: {Counter, LimitT},
+    components: {Counter, LimitT, DispJ},
     data() {
         return {
             title: 'template-vue-init',
             welcomeMsg: [
                 'カウンターコンポーネント＋BootstrapVue（可変）',
-                'Day.jsのテスト'
+                'Day.jsのテスト',
+                'JSONのテスト',
             ],
+            jsondata: srcJson,
         };
     },
 }
@@ -30,6 +35,15 @@ export default {
         <article>
             <h2>{{ welcomeMsg[1] }}</h2>
             <LimitT/>
+        </article>
+        <article>
+            <h2>{{ welcomeMsg[2] }}</h2>
+            <section>
+                <h3>App.vueから直接</h3>
+                <p>{{ this.jsondata }}</p>
+                <h3>子コンポーネントに渡す</h3>
+                <DispJ :arg1="jsondata" />
+            </section>
         </article>
     </main>
 </template>

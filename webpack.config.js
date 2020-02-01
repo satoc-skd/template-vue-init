@@ -33,6 +33,11 @@ module.exports = {
                 test: /\.css$/,
                 use: ['vue-style-loader', 'css-loader'],
             },
+            {
+              test: /\.json$/,
+              loader: "json-loader",
+              type: "javascript/auto",
+            },
         ],
     },
 

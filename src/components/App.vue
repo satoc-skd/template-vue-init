@@ -23,8 +23,8 @@ export default {
         <article>
             <h2>{{ welcomeMsg[0] }}</h2>
             <div class="container">
-                <counter max-value="20"/>
-                <counter max-value="7"/>
+                <counter :max-value="20"/>
+                <counter :max-value="7"/>
             </div>
         </article>
         <article>

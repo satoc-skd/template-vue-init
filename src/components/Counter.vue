@@ -12,17 +12,19 @@ export default {
         }
     },
     methods: {
-        increment() {
-            this.count += 1
+        increment(newValue) {
+            if ( (this.count + newValue) > this.maxValue ) {
+                this.count = this.maxValue;
+                return;
+            };
+            this.count += newValue
         },
-        decrement() {
-            this.count -= 1
-        },
-        setMinValue() {
-            this.count = 0;
-        },
-        setMaxValue() {
-            this.count = this.maxValue;
+        decrement(newValue) {
+            if ( (this.count - newValue) < 0 ) {
+                this.count = 0;
+                return;
+            };
+            this.count -= newValue
         },
     },
     computed: {
@@ -40,10 +42,10 @@ export default {
     <!-- align-items-centerでテキストをボタンの中央に配置する -->
     <!-- align-middleでは何故か効かない… -->
     <div class="row text-center align-items-center">
-        <b-button class="col-2" @click="setMinValue" :disabled="this.isMinValue">＜＜</b-button>
-        <b-button class="col-2" @click="decrement" :disabled="this.isMinValue">ー</b-button>
+        <b-button class="col-2" @click="decrement(10)" :disabled="this.isMinValue">－１０</b-button>
+        <b-button class="col-2" @click="decrement(1)" :disabled="this.isMinValue">－</b-button>
         <span class="col-4">{{ count }}</span>
-        <b-button class="col-2" @click="increment" :disabled="this.isMaxValue">＋</b-button>
-        <b-button class="col-2" @click="setMaxValue" :disabled="this.isMaxValue">＞＞</b-button>
+        <b-button class="col-2" @click="increment(1)" :disabled="this.isMaxValue">＋</b-button>
+        <b-button class="col-2" @click="increment(10)" :disabled="this.isMaxValue">＋１０</b-button>
     </div>
 </template>

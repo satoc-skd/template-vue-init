@@ -8,7 +8,7 @@
 # Features
  
 都度webpack.config.jsを書き直すの面倒なのと
-予めVueとBootstrapVueを入れておきたかった。
+予めVueとBootstrapVue等を入れておきたかった。
  
 # Requirement
  
@@ -17,6 +17,7 @@
 * vue 2.6.11
 * bootstrap 4.4.1
 * bootstrapvue 2.3.0
+* dayjs 1.8.19
  
 # Installation
  

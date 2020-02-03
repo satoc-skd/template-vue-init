@@ -1,13 +1,22 @@
 import Vue from 'vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 // Install BootstrapVue
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
+// 必要最低限のコンポーネントを組み込む
+// https://bootstrap-vue.js.org/docs/components/form-radio#importing-as-a-plugin
+// https://bootstrap-vue.js.org/docs/components/button#importing-as-a-plugin
+// https://bootstrap-vue.js.org/docs/components/button#importing-as-a-plugin
+import { ButtonPlugin, FormRadioPlugin } from 'bootstrap-vue'
+Vue.use(ButtonPlugin)
+Vue.use(FormRadioPlugin)
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// 必要最低限のアイコンセットを組み込む
+// https://bootstrap-vue.js.org/docs/icons#module-bundlers
+import { BIconAlarm, BIconAlarmFill } from 'bootstrap-vue'
+Vue.component('BIconAlarm', BIconAlarm)
+Vue.component('BIconAlarmFill', BIconAlarmFill)
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue/dist/bootstrap-vue.min.css'
 
 
 import App from './components/App'

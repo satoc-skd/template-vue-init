@@ -1,34 +1,102 @@
 [
     {
-        "id": "TH01",
-        "name": "西笠松駅"
+        "StationNumber":  "ST01",
+        "StationName":  "栄町駅",
+        "Type":  "7"
     },
     {
-        "id": "TH02",
-        "name": "柳津駅"
+        "StationNumber":  "ST02",
+        "StationName":  "東大手駅",
+        "Type":  "7"
     },
     {
-        "id": "TH03",
-        "name": "南宿駅"
+        "StationNumber":  "ST03",
+        "StationName":  "清水駅",
+        "Type":  "1"
     },
     {
-        "id": "TH04",
-        "name": "須賀駅"
+        "StationNumber":  "ST04",
+        "StationName":  "尼ヶ坂駅",
+        "Type":  "1"
     },
     {
-        "id": "TH05",
-        "name": "不破一色駅"
+        "StationNumber":  "ST05",
+        "StationName":  "森下駅",
+        "Type":  "1"
     },
     {
-        "id": "TH06",
-        "name": "竹鼻駅"
+        "StationNumber":  "ST06",
+        "StationName":  "大曽根駅",
+        "Type":  "7"
     },
     {
-        "id": "TH07",
-        "name": "羽島市役所前駅"
+        "StationNumber":  "ST07",
+        "StationName":  "矢田駅",
+        "Type":  "1"
     },
     {
-        "id": "TH08",
-        "name": "江吉良駅"
+        "StationNumber":  "ST08",
+        "StationName":  "守山自衛隊前駅",
+        "Type":  "1"
+    },
+    {
+        "StationNumber":  "ST09",
+        "StationName":  "瓢箪山駅",
+        "Type":  "1"
+    },
+    {
+        "StationNumber":  "ST10",
+        "StationName":  "小幡駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST11",
+        "StationName":  "喜多山駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST12",
+        "StationName":  "大森・金城学院前駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST13",
+        "StationName":  "印場駅",
+        "Type":  "3"
+    },
+    {
+        "StationNumber":  "ST14",
+        "StationName":  "旭前駅",
+        "Type":  "3"
+    },
+    {
+        "StationNumber":  "ST15",
+        "StationName":  "尾張旭駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST16",
+        "StationName":  "三郷駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST17",
+        "StationName":  "水野駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST18",
+        "StationName":  "新瀬戸駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST19",
+        "StationName":  "瀬戸市役所前駅",
+        "Type":  "7"
+    },
+    {
+        "StationNumber":  "ST20",
+        "StationName":  "尾張瀬戸駅",
+        "Type":  "7"
     }
 ]

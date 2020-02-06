@@ -1,8 +1,8 @@
 <script>
-import 'dayjs/locale/ja'
-import dayjs from 'dayjs'
+import 'dayjs/locale/ja';
+import dayjs from 'dayjs';
 
-dayjs.locale('ja')
+dayjs.locale('ja');
 
 export default {
     computed: {
@@ -24,20 +24,28 @@ export default {
             return adjustDate.startOf('month').add(1, 'month').add(5, 'hour').subtract(1, 'second').format('YYYY年MM月DD日 dddd HH:mm');
         },
     },
-}
+};
 </script>
 
 <template>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-6">現在日時</div>
-            <div class="col-6">任務受託期限</div>
-        </div>
-        <div class="row">
-            <div class="col-6">{{ this.currentDateTime }}</div>
-            <div class="col-6">{{ this.thisLastDay }}まで</div>
-        </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6">
+        現在日時
+      </div>
+      <div class="col-6">
+        任務受託期限
+      </div>
     </div>
+    <div class="row">
+      <div class="col-6">
+        {{ currentDateTime }}
+      </div>
+      <div class="col-6">
+        {{ thisLastDay }}まで
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
